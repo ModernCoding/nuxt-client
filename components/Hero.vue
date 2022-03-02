@@ -42,7 +42,7 @@
 <style scoped lang="sass">
 
   .hero
-    height: 40vh
+    // height: 40vh
     position: relative
     display: flex
     padding: 5rem 0
@@ -50,7 +50,7 @@
     justify-content: space-between
 
     @media (min-width: 500px)
-      height: 50vh
+      // height: 50vh
 
   .text-container
     width: 50%
