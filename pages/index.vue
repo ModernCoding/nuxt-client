@@ -1,20 +1,27 @@
 <template>
 
-  <div class="container">
+  <div>
 
-    <Hero />
+    <Nav />
 
-    <LargeCardDisplay
-      v-for="cardInfo in largeCardSections"
-      :key="cardInfo.id"
-      :cardsSection="cardInfo"
-    />
 
-    <SmallCardDisplay
-      v-for="cardInfo in smallCardSections"
-      :key="cardInfo.id"
-      :cardsSection="cardInfo"
-    />
+    <div class="container">
+
+      <Hero />
+
+      <LargeCardDisplay
+        v-for="cardInfo in largeCardSections"
+        :key="cardInfo.id"
+        :cardsSection="cardInfo"
+      />
+
+      <SmallCardDisplay
+        v-for="cardInfo in smallCardSections"
+        :key="cardInfo.id"
+        :cardsSection="cardInfo"
+      />
+
+    </div>
 
   </div>
 
@@ -34,7 +41,7 @@
         largeCardSections,
         smallCardSections
       }
-      
+
     }
 
   }
