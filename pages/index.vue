@@ -1,17 +1,32 @@
 <template>
+
   <div class="container">
-    <HeroHeader />
+
+    <Hero />
+
+    <LargeCardDisplay
+      v-for="cardInfo in largeCardSections"
+      :key="cardInfo.id"
+      :cardsSection="cardInfo"
+    />
+
   </div>
+
 </template>
 
-<!--
-
--->
 
 <script>
 
-export default {
-  name: 'IndexPage'
-}
+  import { largeCardSections } from '@/assets/data.js'
+
+  export default {
+
+    data () {
+      return {
+        largeCardSections
+      }
+    }
+
+  }
 
 </script>
