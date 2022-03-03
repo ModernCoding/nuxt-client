@@ -17,9 +17,11 @@
 
 
 <script>
+
   export default {
     props: [ "card" ]
   }
+
 </script>
 
 
