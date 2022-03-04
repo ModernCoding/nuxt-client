@@ -17,7 +17,9 @@
 
   export default {
 
-    layout: "no-nav",
+    layout (context) {
+      return 'no-nav'
+    },
     
     computed: {
       ...mapState ([ 'myRentals' ])
