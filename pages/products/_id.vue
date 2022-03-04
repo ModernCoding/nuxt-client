@@ -92,19 +92,16 @@
 
 <script>
 
-  // import { mapGetters } from 'vuex'
+  import { mapGetters } from 'vuex'
 
   export default {
   
     computed: {
 
+      ...mapGetters ([ 'getProductById' ]),
+
       product () {
-      
-      return this
-        .$store
-        .getters
-        .getProductById (this.$route.params.id)
-      
+        return this.getProductById (this.$route.params.id)
       }
 
     }

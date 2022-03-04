@@ -17,7 +17,9 @@ module.exports = {
   // add your custom rules here
   rules: {
     'array-bracket-spacing': 0,
+    'arrow-parens': 0,
     'eol-last': 0,
+    'eqeqeq': 0,
     'func-call-spacing': 0,
     'indent': 0,
     'no-multiple-empty-lines': 0,
