@@ -26,6 +26,7 @@ module.exports = {
     'no-trailing-spaces': 0,
     'padded-blocks': 0,
     'quotes': 0,
+    'vue/attribute-hyphenation': 0,
     'vue/multi-word-component-names': 0,
     'vue/multiline-html-element-content-newline': 0,
     'vue/require-prop-types': 0,
